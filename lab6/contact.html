@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get in touch with Common Table Café about menu ideas, student events, or the campus café concept.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>Contact — Common Table Café</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/site.js"></script>
+  </head>
+  <body>
+    <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+    <div class="grid">
+    <nav class="navbar md:navbar-expand bg-body border-bottom py-3 g-col-12" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html" aria-label="Common Table Café home"><span class="brand-mark" aria-hidden="true">ct.</span> Common Table <span class="brand-accent">Café</span></a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#cafeNav" aria-controls="cafeNav" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="cafeNav" aria-labelledby="cafeNavLabel">
+          <div class="drawer-header">
+            <h2 class="drawer-title fs-5" id="cafeNavLabel">Find your way</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation menu"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#menu">Menu</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+    </div>
+
+    <main id="main-content" class="container">
+      <header class="py-5">
+        <p class="eyebrow mb-2">We’re glad you stopped by</p>
+        <h1 class="display-3 mb-3">Let’s make campus feel a little more connected.</h1>
+        <p class="lead text-secondary mb-0">Send a note about a menu idea, a student event, or what you’d love to find around the community table.</p>
+      </header>
+
+      <div class="row g-5 pb-5">
+        <section class="col-12 lg:col-7" aria-labelledby="form-heading">
+          <div class="bg-1 border rounded-4 p-4 p-md-5">
+            <h2 class="h2 mb-2" id="form-heading">Write us a note</h2>
+            <p class="text-secondary mb-4">This class project form shows a confirmation in your browser. It does not send or store your information.</p>
+            <form id="contactForm" action="" method="post" class="row g-4">
+              <div class="col-12 md:col-6">
+                <div class="form-field"><label class="form-label" for="firstName">First name</label><input class="form-control" type="text" id="firstName" name="firstName" autocomplete="given-name" required></div>
+              </div>
+              <div class="col-12 md:col-6">
+                <div class="form-field"><label class="form-label" for="lastName">Last name</label><input class="form-control" type="text" id="lastName" name="lastName" autocomplete="family-name" required></div>
+              </div>
+              <div class="col-12">
+                <div class="form-field"><label class="form-label" for="email">School email</label><input class="form-control" type="email" id="email" name="email" autocomplete="email" placeholder="name@school.edu" required></div>
+              </div>
+              <div class="col-12">
+                <div class="form-field"><label class="form-label" for="topic">What would you like to talk about?</label><select class="form-control" id="topic" name="topic" required><option value="">Choose a topic</option><option value="menu">Menu idea</option><option value="event">Student event</option><option value="space">Study space</option><option value="hello">Just saying hello</option></select></div>
+              </div>
+              <div class="col-12">
+                <div class="form-field"><label class="form-label" for="message">Your message</label><textarea class="form-control" id="message" name="message" rows="5" maxlength="600" required></textarea></div>
+              </div>
+              <div class="col-12">
+                <div class="form-field"><input class="check" type="checkbox" id="consent" name="consent" required><label class="form-label" for="consent">I agree to be contacted about this message.</label></div>
+              </div>
+              <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                <button class="btn-solid theme-primary" type="submit">Send a note</button>
+                <p class="small text-secondary mb-0">No message is sent from this demo.</p>
+              </div>
+              <div class="col-12"><p class="alert theme-success mb-0" id="formStatus" role="status" aria-live="polite" hidden></p></div>
+            </form>
+          </div>
+        </section>
+
+        <aside class="col-12 lg:col-5" aria-labelledby="visit-heading">
+          <div class="p-4 p-md-5 border rounded-4 h-100">
+            <p class="eyebrow mb-2">A student café concept</p>
+            <h2 class="h2 mb-4" id="visit-heading">A place for the in-between moments.</h2>
+            <p class="text-secondary">Common Table imagines a campus café where everyone can take a breather, find a good seat, and feel welcome.</p>
+            <hr class="my-4">
+            <h3 class="h5">In this concept</h3>
+            <ul class="list-unstyled">
+              <li class="py-2 border-bottom">Coffee and tea made with care</li>
+              <li class="py-2 border-bottom">Fresh pastries and light bites</li>
+              <li class="py-2">A shared table for student-led events</li>
+            </ul>
+            <a class="icon-link link-primary" href="index.html#menu">Explore the café <span aria-hidden="true">→</span></a>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer border-top py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 md:col-4">
+            <p class="navbar-brand mb-2"><span class="brand-mark" aria-hidden="true">ct.</span> Common Table <span class="brand-accent">Café</span></p>
+            <p class="text-secondary mb-0">A student café concept built around good coffee and good company.</p>
+          </div>
+          <div class="col-12 md:col-3">
+            <h2 class="h6">Explore</h2>
+            <ul class="list-unstyled mb-0"><li><a href="index.html">Home</a></li><li><a href="index.html#menu">Menu</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+          </div>
+          <div class="col-12 md:col-5">
+            <h2 class="h6">Photo credits</h2>
+            <p class="small text-secondary mb-0">
+              Interior: <a href="https://unsplash.com/photos/cozy-coffee-shop-interior-with-plants-and-seating-YzCnnBY3zAA" target="_blank" rel="noreferrer">Skyler Smith</a> ·
+              Students: <a href="https://unsplash.com/photos/people-work-on-laptops-in-a-cozy-coffee-shop-pqltPFdZaUw" target="_blank" rel="noreferrer">Zoshua Colah</a> ·
+              Espresso machine: <a href="https://unsplash.com/photos/barista-preparing-coffee-with-espresso-machine-in-cafe-vCtvn_xqoyA" target="_blank" rel="noreferrer">Blake Wisz</a> ·
+              Espresso &amp; croissant: <a href="https://unsplash.com/photos/latte-art-coffee-with-croissant-and-butter-on-table-FiQUUohIeZU" target="_blank" rel="noreferrer">Esra Afşar</a> ·
+              Matcha: <a href="https://unsplash.com/photos/hand-holding-a-cup-of-matcha-latte-with-latte-art-heoukQboTU4" target="_blank" rel="noreferrer">Liana S</a> ·
+              Pastries: <a href="https://unsplash.com/photos/a-baker-works-at-a-pastry-shops-counter-s5eZd_Ceszg" target="_blank" rel="noreferrer">Raymond Yeung</a> ·
+              Cake: <a href="https://unsplash.com/photos/a-white-plate-topped-with-a-cake-next-to-a-cup-of-coffee-vmyGJV0Ej9M" target="_blank" rel="noreferrer">Sirius Harrison</a> ·
+              Study: <a href="https://unsplash.com/photos/man-working-on-laptop-in-a-cafe-by-the-window-E5llEM1xtWA" target="_blank" rel="noreferrer">Kounotori</a> ·
+              Community: <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg" target="_blank" rel="noreferrer">Brooke Cagle</a> / Unsplash.
+            </p>
+          </div>
+        </div>
+        <p class="small text-secondary border-top pt-3 mt-4 mb-0">© 2026 Common Table Café · Student project concept</p>
+      </div>
+    </footer>
+  </body>
+</html>

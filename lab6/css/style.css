@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light;
+  --bs-bg-body: #fbf7f1;
+  --bs-fg-body: #302820;
+  --bs-primary-base: #a65f45;
+  --bs-primary-bg: #a65f45;
+  --bs-primary-fg: #8d4a33;
+  --bs-primary-fg-emphasis: #633625;
+  --bs-primary-bg-subtle: #f4e9e0;
+  --bs-primary-bg-muted: #ead6c8;
+  --bs-primary-border: #d8b09c;
+  --bs-primary-focus-ring: rgba(166, 95, 69, .35);
+  --bs-primary-contrast: #fffaf6;
+  --bs-body-font-family: "Segoe UI", Arial, sans-serif;
+}
+h1, h2, h3, h4, .navbar-brand { font-family: Georgia, "Times New Roman", serif; }
+.brand-mark, .brand-accent, .eyebrow { color: var(--bs-primary-fg); }
+.brand-mark { font-family: Georgia, "Times New Roman", serif; font-weight: 700; letter-spacing: -.08em; }
+.brand-accent { font-style: italic; }
+.eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.cafe-card { border-color: #e5d9ce; background-color: #fffdfa; }
+.cafe-card summary { color: var(--bs-primary-fg); font-weight: 600; cursor: pointer; }
+.site-footer a { color: var(--bs-primary-fg-emphasis); }
+.site-footer a:hover { color: var(--bs-primary-fg); }

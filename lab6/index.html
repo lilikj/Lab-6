@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Common Table Café is a student café concept for coffee, good food, and a place to pause between classes.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <title>Common Table Café — Coffee &amp; campus community</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/site.js"></script>
+  </head>
+  <body>
+    <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+    <div class="grid">
+    <nav class="navbar md:navbar-expand bg-body border-bottom py-3 g-col-12" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html" aria-label="Common Table Café home"><span class="brand-mark" aria-hidden="true">ct.</span> Common Table <span class="brand-accent">Café</span></a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#cafeNav" aria-controls="cafeNav" aria-expanded="false" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="cafeNav" aria-labelledby="cafeNavLabel">
+          <div class="drawer-header">
+            <h2 class="drawer-title fs-5" id="cafeNavLabel">Find your way</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation menu"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-md-auto gap-2">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+    </div>
+
+    <main id="main-content" class="container">
+      <section class="row align-items-end g-4 py-5" aria-labelledby="welcome-heading">
+        <div class="col-12 lg:col-8">
+          <p class="eyebrow mb-2">A campus café concept · made for student life</p>
+          <h1 class="display-3 mb-3" id="welcome-heading">Good coffee. A seat at your table.</h1>
+          <p class="lead text-secondary mb-4">Common Table is a welcoming pause between classes: thoughtful coffee, fresh bites, and room to study, talk, or simply take a breath.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn-solid theme-primary" href="#menu">Explore the menu</a>
+            <a class="btn-outline theme-primary" href="contact.html">Say hello</a>
+          </div>
+        </div>
+        <aside class="col-12 lg:col-4">
+          <div class="bg-1 border rounded-4 p-4">
+            <p class="eyebrow mb-2">A little more than coffee</p>
+            <p class="h5 mb-2">Your between-class place</p>
+            <p class="mb-0 text-secondary">Grab a cup to go, settle in with your notes, or meet a friend at the long table.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="mb-5" aria-label="Inside Common Table Café">
+        <div id="cafeCarousel" class="carousel slide" aria-label="Café scenes">
+          <div class="carousel-inner rounded-4">
+            <div class="carousel-item active">
+              <figure class="m-0">
+                <div class="ratio ratio-16x9 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/carousel-interior.jpg" alt="Sunlit café counter with wooden stools, plants, and a pastry case"></div>
+                <figcaption class="bg-1 px-4 py-3"><p class="eyebrow mb-1">Come as you are</p><h2 class="h4 mb-0">A warm corner between wherever you need to be.</h2></figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="m-0">
+                <div class="ratio ratio-16x9 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/carousel-students.jpg" alt="Students working together around a table in a café"></div>
+                <figcaption class="bg-1 px-4 py-3"><p class="eyebrow mb-1">Make room for ideas</p><h2 class="h4 mb-0">Bring your notes, your project group, or just yourself.</h2></figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="m-0">
+                <div class="ratio ratio-16x9 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/carousel-barista.jpg" alt="Espresso machine and coffee cups ready for the morning rush"></div>
+                <figcaption class="bg-1 px-4 py-3"><p class="eyebrow mb-1">Made with care</p><h2 class="h4 mb-0">Good coffee, made thoughtfully and served with a smile.</h2></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="carousel-indicators" aria-label="Choose a café scene">
+              <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show café interior"></button>
+              <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="1" aria-label="Show students at a table"></button>
+              <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="2" aria-label="Show coffee preparation"></button>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn-icon btn-sm" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev" aria-label="Previous café scene"><span class="carousel-icon-prev" aria-hidden="true"></span></button>
+              <button class="btn-icon btn-sm" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next" aria-label="Next café scene"><span class="carousel-icon-next" aria-hidden="true"></span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="py-5" aria-labelledby="menu-heading">
+        <div class="row align-items-end g-3 mb-4">
+          <div class="col-12 md:col-8">
+            <p class="eyebrow mb-2">From the counter and the community</p>
+            <h2 class="display-5 mb-0" id="menu-heading">A few favorite things</h2>
+          </div>
+          <p class="col-12 md:col-4 text-secondary mb-0">A small menu, a long table, and something good for every kind of study break.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100 cafe-card">
+              <div class="ratio ratio-4x3 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/espresso-croissant.jpg" alt="Latte and golden croissant with a book on a wooden table" loading="lazy"></div>
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow mb-2">The daily ritual</p><h3 class="h4">House espresso</h3>
+                <p class="text-secondary">A balanced, chocolatey shot for early lectures and long afternoons.</p>
+                <details class="mb-3"><summary>What makes it a favorite?</summary><p class="mt-2 mb-0">Our imagined house blend is smooth enough to enjoy straight and lively enough to shine with steamed milk.</p></details>
+                <button class="btn-outline theme-primary mt-auto" type="button" data-bs-toggle="dialog" data-bs-target="#espressoDialog">About the espresso</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100 cafe-card">
+              <div class="ratio ratio-4x3 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/matcha-latte.jpg" alt="Green matcha latte held above a wooden café table" loading="lazy"></div>
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow mb-2">A gentle pick-me-up</p><h3 class="h4">Matcha latte</h3>
+                <p class="text-secondary">Earthy matcha whisked smooth with your choice of milk.</p>
+                <details class="mb-3"><summary>How do you serve it?</summary><p class="mt-2 mb-0">Order it warm for a cozy pause or iced for a fresh walk across campus.</p></details>
+                <button class="btn-outline theme-primary mt-auto" type="button" data-bs-toggle="dialog" data-bs-target="#matchaDialog">About the matcha</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100 cafe-card">
+              <div class="ratio ratio-4x3 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/pastry-counter.jpg" alt="Fresh pastries and cakes arranged in a bakery display case" loading="lazy"></div>
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow mb-2">Baked for the break</p><h3 class="h4">Pastry of the day</h3>
+                <p class="text-secondary">A flaky, just-right treat from the counter to go with your coffee.</p>
+                <details class="mb-3"><summary>What might be on the tray?</summary><p class="mt-2 mb-0">Think butter croissants, fruit danishes, and a rotating student-baker special while it lasts.</p></details>
+                <button class="btn-outline theme-primary mt-auto" type="button" data-bs-toggle="dialog" data-bs-target="#pastryDialog">About the pastry case</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100 cafe-card">
+              <div class="ratio ratio-4x3 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/cake-coffee.jpg" alt="A slice of berry cake beside two iced coffees" loading="lazy"></div>
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow mb-2">A little something sweet</p><h3 class="h4">Berry cake &amp; cold brew</h3>
+                <p class="text-secondary">A soft, fruity slice paired with a slow-steeped coffee over ice.</p>
+                <details class="mb-3"><summary>Is there a seasonal option?</summary><p class="mt-2 mb-0">The featured bake changes with the season, with a plant-based treat always in the rotation.</p></details>
+                <button class="btn-outline theme-primary mt-auto" type="button" data-bs-toggle="dialog" data-bs-target="#cakeDialog">About the sweet break</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100 cafe-card">
+              <div class="ratio ratio-4x3 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/card-study.jpg" alt="Student studying on a laptop at a café table by the window" loading="lazy"></div>
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow mb-2">Settle in</p><h3 class="h4">The quiet corner</h3>
+                <p class="text-secondary">A calm seat by the window for reading, revising, and recharging.</p>
+                <details class="mb-3"><summary>Good for a focused hour?</summary><p class="mt-2 mb-0">Choose a window seat, plug in, and enjoy a slower corner away from the lunchtime buzz.</p></details>
+                <button class="btn-outline theme-primary mt-auto" type="button" data-bs-toggle="dialog" data-bs-target="#studyDialog">About the study space</button>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <article class="card h-100 cafe-card">
+              <div class="ratio ratio-4x3 position-relative overflow-hidden"><img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="images/card-community.jpg" alt="Friends sharing ideas around a café table" loading="lazy"></div>
+              <div class="card-body d-flex flex-column">
+                <p class="eyebrow mb-2">Better together</p><h3 class="h4">Community table</h3>
+                <p class="text-secondary">A place to meet your group, swap ideas, or make a new campus friend.</p>
+                <details class="mb-3"><summary>What happens around the table?</summary><p class="mt-2 mb-0">Student clubs can host low-key meetups, sketch nights, and open-mic afternoons in this concept space.</p></details>
+                <button class="btn-outline theme-primary mt-auto" type="button" data-bs-toggle="dialog" data-bs-target="#communityDialog">About the community table</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-1 rounded-4 p-4 p-md-5 my-5" aria-labelledby="visit-heading">
+        <div class="row align-items-center g-3">
+          <div class="col-12 md:col-8"><p class="eyebrow mb-2">Make it your spot</p><h2 class="h2 mb-2" id="visit-heading">There’s always room at the table.</h2><p class="text-secondary mb-0">Questions, club ideas, or a favorite drink we should add? We’d love to hear from you.</p></div>
+          <div class="col-12 md:col-4 md:text-end"><a class="btn-solid theme-primary" href="contact.html">Get in touch</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer border-top py-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 md:col-4">
+            <p class="navbar-brand mb-2"><span class="brand-mark" aria-hidden="true">ct.</span> Common Table <span class="brand-accent">Café</span></p>
+            <p class="text-secondary mb-0">A student café concept built around good coffee and good company.</p>
+          </div>
+          <div class="col-12 md:col-3">
+            <h2 class="h6">Explore</h2>
+            <ul class="list-unstyled mb-0"><li><a href="index.html">Home</a></li><li><a href="index.html#menu">Menu</a></li><li><a href="contact.html">Contact</a></li></ul>
+          </div>
+          <div class="col-12 md:col-5">
+            <h2 class="h6">Photo credits</h2>
+            <p class="small text-secondary mb-0">
+              Interior: <a href="https://unsplash.com/photos/cozy-coffee-shop-interior-with-plants-and-seating-YzCnnBY3zAA" target="_blank" rel="noreferrer">Skyler Smith</a> ·
+              Students: <a href="https://unsplash.com/photos/people-work-on-laptops-in-a-cozy-coffee-shop-pqltPFdZaUw" target="_blank" rel="noreferrer">Zoshua Colah</a> ·
+              Espresso machine: <a href="https://unsplash.com/photos/barista-preparing-coffee-with-espresso-machine-in-cafe-vCtvn_xqoyA" target="_blank" rel="noreferrer">Blake Wisz</a> ·
+              Espresso &amp; croissant: <a href="https://unsplash.com/photos/latte-art-coffee-with-croissant-and-butter-on-table-FiQUUohIeZU" target="_blank" rel="noreferrer">Esra Afşar</a> ·
+              Matcha: <a href="https://unsplash.com/photos/hand-holding-a-cup-of-matcha-latte-with-latte-art-heoukQboTU4" target="_blank" rel="noreferrer">Liana S</a> ·
+              Pastries: <a href="https://unsplash.com/photos/a-baker-works-at-a-pastry-shops-counter-s5eZd_Ceszg" target="_blank" rel="noreferrer">Raymond Yeung</a> ·
+              Cake: <a href="https://unsplash.com/photos/a-white-plate-topped-with-a-cake-next-to-a-cup-of-coffee-vmyGJV0Ej9M" target="_blank" rel="noreferrer">Sirius Harrison</a> ·
+              Study: <a href="https://unsplash.com/photos/man-working-on-laptop-in-a-cafe-by-the-window-E5llEM1xtWA" target="_blank" rel="noreferrer">Kounotori</a> ·
+              Community: <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg" target="_blank" rel="noreferrer">Brooke Cagle</a> / Unsplash.
+            </p>
+          </div>
+        </div>
+        <p class="small text-secondary border-top pt-3 mt-4 mb-0">© 2026 Common Table Café · Student project concept</p>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="espressoDialog" aria-labelledby="espressoDialogTitle">
+      <div class="dialog-header"><h2 class="dialog-title" id="espressoDialogTitle">The house espresso</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button></div>
+      <div class="dialog-body"><p>Our imagined house espresso is a steady, balanced cup with cocoa notes and a gentle finish. It’s the foundation for cappuccinos, flat whites, and late-afternoon pick-me-ups.</p></div>
+      <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Sounds good</button></div>
+    </dialog>
+    <dialog class="dialog" id="matchaDialog" aria-labelledby="matchaDialogTitle">
+      <div class="dialog-header"><h2 class="dialog-title" id="matchaDialogTitle">The matcha latte</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button></div>
+      <div class="dialog-body"><p>Whisked to order, this mellow green tea drink can be made with dairy or oat milk. Ask for it iced when the campus path gets sunny.</p></div>
+      <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Sounds good</button></div>
+    </dialog>
+    <dialog class="dialog" id="pastryDialog" aria-labelledby="pastryDialogTitle">
+      <div class="dialog-header"><h2 class="dialog-title" id="pastryDialogTitle">The pastry case</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button></div>
+      <div class="dialog-body"><p>Our concept menu keeps the pastry case small and fresh: flaky favorites, a rotating bake from a student maker, and clear labels for common allergens.</p></div>
+      <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Sounds good</button></div>
+    </dialog>
+    <dialog class="dialog" id="cakeDialog" aria-labelledby="cakeDialogTitle">
+      <div class="dialog-header"><h2 class="dialog-title" id="cakeDialogTitle">The sweet break</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button></div>
+      <div class="dialog-body"><p>A slice of seasonal cake makes a study break feel like a real break. The menu concept includes a plant-based option and cold brew poured over ice.</p></div>
+      <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Sounds good</button></div>
+    </dialog>
+    <dialog class="dialog" id="studyDialog" aria-labelledby="studyDialogTitle">
+      <div class="dialog-header"><h2 class="dialog-title" id="studyDialogTitle">The quiet corner</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button></div>
+      <div class="dialog-body"><p>When you need a little focus, this concept space offers window seats, shared outlets, and a calmer pocket away from the busiest tables.</p></div>
+      <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Sounds good</button></div>
+    </dialog>
+    <dialog class="dialog" id="communityDialog" aria-labelledby="communityDialogTitle">
+      <div class="dialog-header"><h2 class="dialog-title" id="communityDialogTitle">The community table</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button></div>
+      <div class="dialog-body"><p>The table is a shared campus spot for group projects, club meetups, and small creative events. It’s designed to make it easy to join in or pull up a chair.</p></div>
+      <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Sounds good</button></div>
+    </dialog>
+  </body>
+</html>
